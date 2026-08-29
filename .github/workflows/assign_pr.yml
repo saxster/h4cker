@@ -5,9 +5,8 @@
 name: Auto-assign pull requests
 
 on:
-  pull_request:
-    types: [opened]
-
+  push:
+    branches: [main]
 jobs:
   auto-assign:
     runs-on: ubuntu-latest
